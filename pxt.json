@@ -22,5 +22,8 @@
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "github:pisupply/pxt-oled-ssd1306#v1.1.1"
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
