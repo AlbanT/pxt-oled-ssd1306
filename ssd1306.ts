@@ -113,10 +113,10 @@ namespace OLED {
     //% block="draw filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2|color %color"
     //% async 
     //% shim=OLED::fillTriangle
-    export function fillTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number, color:number): void {
+/*    export function fillTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number, color:number): void {
         return;
     }
-
+*/
 
     /**
      * draws a filled rectangle
@@ -124,34 +124,15 @@ namespace OLED {
      * @param y number of pixels
      * @param w number of pixels
      * @param h number of pixels
+     * @param c number a colour 0=BLACK 1=WHITE
      */
     //% blockId=oled_fill_rect
-    //% block="draw filled box with coordinates |x %x|y %y|w %w|h %h"
+    //% block="draw filled box with coordinates |x %x|y %y|w %w|h %h|c %c"
     //% async 
     //% shim=OLED::fillRect
-    export function fillRectangle(x:number,y:number, w:number, h:number): void {
+    export function fillRectangle(x:number,y:number, w:number, h:number, c:number): void {
         return;
     }
-
-
-
-
-    /**
-     * removes a filled rectangle
-     * @param x number of pixels
-     * @param y number of pixels
-     * @param w number of pixels
-     * @param h number of pixels
-     */
-    //% blockId=oled_remove_rect
-    //% block="remove box with coordinates |x %x|y %y|w %w|h %h"
-    //% async 
-    //% shim=OLED::removeRect
-    export function removeRectangle(x:number,y:number, w:number, h:number): void {
-        return;
-    }
-
-
 
     /**
      * draws an outlined rectangle
@@ -167,31 +148,20 @@ namespace OLED {
     export function drawRectangle(x:number,y:number, w:number, h:number): void {
         return;
     }
-    /**
-     * draws a filled circle
-     * @param x number of pixels
-     * @param y number of pixels
-     * @param r number of pixels
-     */
-    //% blockId=oled_fill_circle
-    //% block="draw filled circle with coordinates |x %x|y %y|r %r"
-    //% async 
-    //% shim=OLED::fillCircle
-    export function fillCircle(x:number,y:number, r:number): void {
-        return;
-    }
+
 
     /**
      * removes a filled circle
      * @param x number of pixels
      * @param y number of pixels
      * @param r number of pixels
+     * @param c number a colour 0=BLACK 1=WHITE
      */
-    //% blockId=oled_fill_circle2
-    //% block="remove circle with coordinates |x %x|y %y|r %r"
+    //% blockId=oled_fill_circle
+    //% block="fill circle with colour at |x %x|y %y|r %r|c %c"
     //% async 
-    //% shim=OLED::fillCircle2
-    export function fillCircle2(x:number,y:number, r:number): void {
+    //% shim=OLED::fillCircle
+    export function fillCircle(x:number,y:number, r:number, c:number): void {
         return;
     }
 

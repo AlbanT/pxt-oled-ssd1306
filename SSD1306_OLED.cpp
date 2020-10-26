@@ -66,10 +66,10 @@ namespace OLED {
 	}
 
     //%
-	void fillTriangle(int x, int y, int x1, int y1, int x2, int y2, int c){
-		oled->fillTriangle(x, y, x1, y1, x2, y2, c);
-		oled->display();
-	}
+//%	void fillTriangle(int x, int y, int x1, int y1, int x2, int y2, int c){
+//%		oled->fillTriangle(x, y, x1, y1, x2, y2, c);
+//%		oled->display();
+//%	}
 
 	//%
 	void drawCircle(int x, int y, int r){
@@ -77,15 +77,9 @@ namespace OLED {
 		oled->display();
 	}
 
-	//%
-	void fillCircle(int x, int y, int r){
-		oled->fillCircle(x, y, r, 1);
-		oled->display();
-	}
-
     //%
-	void fillCircle2(int x, int y, int r){
-		oled->fillCircle(x, y, r, 0);
+	void fillCircle(int x, int y, int r, int c){
+		oled->fillCircle(x, y, r, c);
 		oled->display();
 	}
 
@@ -96,16 +90,12 @@ namespace OLED {
 	}
 
 	//%
-	void fillRect(int x, int y, int w, int h){
-		oled->fillRect(x, y, w, h, 1);
+	void fillRect(int x, int y, int w, int h, int c){
+		oled->fillRect(x, y, w, h, c);
 		oled->display();
 	}
 
-    //%
-	void removeRect(int x, int y, int w, int h){
-		oled->fillRect(x, y, w, h, 0);
-		oled->display();
-	}
+
 
     
 
@@ -151,7 +141,7 @@ namespace OLED {
 		int w = 21;
 		int h = 64;
 		for (int i = 0; i < 6;i++){
-			fillRect(x, y, w, h);
+			fillRect(x, y, w, h,1);
 			x = x + 21;
 			oled->display();
 		}
@@ -162,7 +152,7 @@ namespace OLED {
 	void showProgress(int progress) {
 		oled->clearDisplay();
 		drawRect(0,21,128,21);
-		fillRect(0,21,progress*128/100,21);
+		fillRect(0,21,progress*128/100,21,1);
 	}
     #define printf(...) uBit.serial.printf(__VA_ARGS__)
 
