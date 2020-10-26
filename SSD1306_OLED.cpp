@@ -66,14 +66,8 @@ namespace OLED {
 	}
 
     //%
-	void fillTriangle(int x, int y, int x1, int y1, int x2, int y2){
-		oled->fillTriangle(x, y, x1, y1, x2, y2, 1);
-		oled->display();
-	}
-
-    //%
-	void removeTriangle(int x, int y, int x1, int y1, int x2, int y2){
-		oled->fillTriangle(x, y, x1, y1, x2, y2, 0);
+	void fillTriangle(int x, int y, int x1, int y1, int x2, int y2, int c){
+		oled->fillTriangle(x, y, x1, y1, x2, y2, c);
 		oled->display();
 	}
 

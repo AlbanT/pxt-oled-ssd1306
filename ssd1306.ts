@@ -110,23 +110,13 @@ namespace OLED {
      * draws a filled triangle
      */
     //% blockId=oled_fill_triangle
-    //% block="draw filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
+    //% block="draw filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2|color %color"
     //% async 
     //% shim=OLED::fillTriangle
-    export function fillTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number): void {
+    export function fillTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number, color:number): void {
         return;
     }
 
-    /**
-     * removes a filled triangle
-     */
-    //% blockId=oled_remove_triangle
-    //% block="remove filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
-    //% async 
-    //% shim=OLED::removeTriangle
-    export function removeTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number): void {
-        return;
-    }
 
     /**
      * draws a filled rectangle
