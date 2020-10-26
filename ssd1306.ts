@@ -104,6 +104,30 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
+
+
+    /**
+     * draws a filled triangle
+     */
+    //% blockId=oled_fill_triangle
+    //% block="draw filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
+    //% async 
+    //% shim=OLED::fillTriangle
+    export function fillTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number): void {
+        return;
+    }
+
+    /**
+     * removes a filled triangle
+     */
+    //% blockId=oled_remove_triangle
+    //% block="remove filled triangle with coordinates |x %x|y %y|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
+    //% async 
+    //% shim=OLED::removeTriangle
+    export function removeTriangle(x:number,y:number, x1:number, y1:number, x2:number, y2:number): void {
+        return;
+    }
+
     /**
      * draws a filled rectangle
      * @param x number of pixels
@@ -122,18 +146,18 @@ namespace OLED {
 
 
 
-/**
+    /**
      * removes a filled rectangle
      * @param x number of pixels
      * @param y number of pixels
      * @param w number of pixels
      * @param h number of pixels
      */
-    //% blockId=oled_fill_rect2
+    //% blockId=oled_remove_rect
     //% block="remove box with coordinates |x %x|y %y|w %w|h %h"
     //% async 
-    //% shim=OLED::fillRect2
-    export function fillRectangle2(x:number,y:number, w:number, h:number): void {
+    //% shim=OLED::removeRect
+    export function removeRectangle(x:number,y:number, w:number, h:number): void {
         return;
     }
 
