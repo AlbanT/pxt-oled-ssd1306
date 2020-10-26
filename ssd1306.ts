@@ -118,6 +118,27 @@ namespace OLED {
     export function fillRectangle(x:number,y:number, w:number, h:number): void {
         return;
     }
+
+
+
+
+/**
+     * removes a filled rectangle
+     * @param x number of pixels
+     * @param y number of pixels
+     * @param w number of pixels
+     * @param h number of pixels
+     */
+    //% blockId=oled_fill_rect2
+    //% block="remove box with coordinates |x %x|y %y|w %w|h %h"
+    //% async 
+    //% shim=OLED::fillRect2
+    export function fillRectangle2(x:number,y:number, w:number, h:number): void {
+        return;
+    }
+
+
+
     /**
      * draws an outlined rectangle
      * @param x number of pixels
@@ -145,6 +166,21 @@ namespace OLED {
     export function fillCircle(x:number,y:number, r:number): void {
         return;
     }
+
+    /**
+     * removes a filled circle
+     * @param x number of pixels
+     * @param y number of pixels
+     * @param r number of pixels
+     */
+    //% blockId=oled_fill_circle2
+    //% block="remove circle with coordinates |x %x|y %y|r %r"
+    //% async 
+    //% shim=OLED::fillCircle2
+    export function fillCircle2(x:number,y:number, r:number): void {
+        return;
+    }
+
     /**
      * draws an outlined cirle
      * @param x x-coordinate of centre

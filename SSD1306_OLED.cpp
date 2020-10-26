@@ -77,6 +77,12 @@ namespace OLED {
 		oled->display();
 	}
 
+    //%
+	void fillCircle2(int x, int y, int r){
+		oled->fillCircle(x, y, r, 0);
+		oled->display();
+	}
+
 	//%
 	void drawLine(int x0, int y0, int x1, int y1){
 		oled->drawLine(x0, y0, x1, y1, 1);
@@ -88,6 +94,14 @@ namespace OLED {
 		oled->fillRect(x, y, w, h, 1);
 		oled->display();
 	}
+
+    //%
+	void fillRect2(int x, int y, int w, int h){
+		oled->fillRect(x, y, w, h, 0);
+		oled->display();
+	}
+
+    
 
 	//%
     void drawRect(int x, int y, int w, int h){
